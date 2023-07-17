@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar";
 import MainPage from "./pages/MainPage";
-import CountryPage from "./pages/CountryPage";
 
 function App() {
   const [countries, setCountries] = useState([]);
