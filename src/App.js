@@ -59,10 +59,10 @@ function App() {
             />
           }
         ></Route>
-        <Route
+        {/* <Route
           path="/:country"
           element={<CountryPage countries={countries} loading={loading} />}
-        ></Route>
+        ></Route> */}
       </Routes>
     </BrowserRouter>
   );
