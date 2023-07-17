@@ -1,7 +1,7 @@
 import FlagCard from "./FlagCard.js";
 function FlagSection({ region, textSearch, countries }) {
   return (
-    <div className="flex flex-wrap justify-center mx-6 w-fit">
+    <div className="flex flex-wrap justify-center mx-auto w-full">
       {region === "all"
         ? countries.map(
             (country) =>
@@ -14,7 +14,7 @@ function FlagSection({ region, textSearch, countries }) {
                   region={country.region}
                   capital={country.capital}
                 />
-              )
+              ),
           )
         : countries.map(
             (country) =>
@@ -28,7 +28,7 @@ function FlagSection({ region, textSearch, countries }) {
                   region={country.region}
                   capital={country.capital}
                 />
-              )
+              ),
           )}
     </div>
   );

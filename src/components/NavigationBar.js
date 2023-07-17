@@ -1,7 +1,13 @@
+import { Link } from "react-router-dom";
+
 function NavigationBar({ toggleTheme }) {
   return (
     <div className="drop-shadow-sm py-7 px-5 justify-between text-white flex transition-all duration-300 bg-darkBlue dark:text-veryDarkBlue2 dark:bg-white md:px-12 ">
-      <div className="font-nunito3">Where in the world?</div>
+      <Link to="/">
+        <div className="font-nunito3 hover:cursor-pointer">
+          Where in the world?
+        </div>
+      </Link>
 
       <div
         className="rounded flex justify-center items-center hover:cursor-pointer dark:text-black transition-all duration-300"
